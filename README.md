@@ -1,6 +1,6 @@
-# iris-dataset work
+# ml-reference
 
-This is ML/dat-viz work on the iris dataset.
+This repo is for demo and reference notebooks on machine learning and hosts a wiki for notes. 
 
 The ML notebook:
 This is the code for the tutorial titled "Your First Machine Learning Project in Python Step-By-Step" by Jason Brownlee: 
