@@ -9,3 +9,14 @@ http://machinelearningmastery.com/machine-learning-in-python-step-by-step/
 It is kept as a starter-kit or reference for other machine learning projects. 
 It involves installing necessary dependencies, using built-in quick tools for describing data, visualizing data, 
 loading and reading a csv file into a pandas dataframe, and testing out different models with cross-validation. 
+
+
+# test_cnns
+Experimentation with neural networks in jupyter notebooks 
+
+
+1. Run notebook on Google Cloud Platform with: 
+````
+jupyter-notebook --no-browser --port=5000
+````
+
