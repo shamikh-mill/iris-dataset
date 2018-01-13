@@ -46,3 +46,7 @@ See GPU usages
 ```
 nvidia-smi
 ```
+
+Pickle 
+https://wiki.python.org/moin/UsingPickle
+
