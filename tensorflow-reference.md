@@ -30,9 +30,33 @@ nodes that build up the neural network itself. So when we deploy it, we can stri
 graph that we don't need. 
 
 
+- Placeholder nodes get assigned a new value each time we make a calculation, so you initialize with placeholder and
+a type. 
 
+Example Addition Graph: Define the model, create a session, pass in data, and then send it off to the TensorFlow 
+execution engine for the result. 
+```
+import os
+import tensorflow as tf
 
+# Turn off TensorFlow warning messages in program output
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
+# Define computational graph
+X = tf.placeholder(tf.float32, name="X")
+Y = tf.placeholder(tf.float32, name="Y")
+
+addition_node = tf.add(X, Y, name="addition")
+
+# Create the session
+with tf.Session() as session:
+    result = session.run(addition_node, feed_dict={X: [1, 2, 10], Y: [4, 2, 10]})
+    print(result)
+```
+
+- Once you have a session, you can ask it to run operations on the computational graph by calling session.run, and 
+passing in the operation we want to run. 
+- Return values will be tensors, because we're operating on tensors! 
 
 
 
