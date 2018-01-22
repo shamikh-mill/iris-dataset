@@ -58,8 +58,11 @@ with tf.Session() as session:
 passing in the operation we want to run. 
 - Return values will be tensors, because we're operating on tensors! 
 
-
-
+## Loading Data 
+1. Can preload into memory (arrays- don't need tf-specific functions, but constrained by available memory), 
+feed data in step by step, or create custom pipeline, tf-specific method. 
+2. Use scaling to ensure that we don't have a mix of large and small numbers- MinMaxScaler in sklearn is good for this.
+Use 'fit_transform' to scale training data, and 'trabsform' for testing data 
 
 ## Glossary
 1. Epoch - one full training pass over the dataset. 
