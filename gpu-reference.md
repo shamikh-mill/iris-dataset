@@ -24,23 +24,26 @@ Attaching/removing screens
 
 1. Start a screen 
 ```
-screen -S screenname
+screen -S <screenname>
 ```
-Ctrl-A + D: come out of the screen
-
-
+2. Come out of the screen (detach)
+```
+Ctrl-A + D: 
+```
 2. Seeing list of screens 
-screen -ls: see list of screens 
-
+```
+screen -ls
+```
 
 3. Removing screen
-Ctrl-A K inside the screen 
+```
+Ctrl-A K (inside the screen)
+```
 
 4. Going into the screen
-screen -r screenname 
-
-
-
+```
+screen -r <screenname> 
+```
 
 See GPU usages 
 ```
