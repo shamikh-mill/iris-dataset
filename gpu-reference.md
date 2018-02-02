@@ -8,7 +8,11 @@ Launches jupyter notebook
 
 Launching web browser 
 ```
+Jupyter: 
 x-www-browser http://localhost:8888/tree/
+
+TensorBoard: 
+x-www-browser http://localhost/6006
 ```
 
 
