@@ -1,7 +1,7 @@
 # Linux GPU Commands for Data Science/ML
 
 Launches jupyter notebook
-
+# gpu-compute6.cs.duke.edu
 ```
 ~/.local/bin/jupyter-notebook
 ```
