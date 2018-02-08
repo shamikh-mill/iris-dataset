@@ -58,5 +58,12 @@ Basic Recipe for ML
 
 Note that more training data will not help if we have a bias problem! More data will usually lower variance and doesn't change bias much. 
 
+Regularization- technique for reducing variance (may increase bias a little bit, but not too much for a large network), especially if we don't have more training data.
+- L2: Used much more often than L1 (Usually helps more)- Add a regularization parameter to the loss function used during training. 
+- Usually this is lambda (regularization parameter)/2m * norm(w^2). L2 norm is called Frobenius norm of the matrix 
+- norm(w^2) = wTw = squared Euclidian norm of the parameter vector W. W (usually pretty high dimensional parameter vector) contains all the parameters that are being overfit. So we usually don't need to a b regularization. 
+- "Weight decay"- multiplying weight matrix with a number slightly less than one as well as doing the normal backpropogation algorithm. 
+- L1: Add a term lambda/m x norm(w), just the l1 norm of the parameter vector W. Using this causes W to be sparse (lots of 0s) which helps compress the model (helps memory usage).  
+- lambda, reg parameter to be tuned, should be set using the dev set (see what works best) 
 
 
