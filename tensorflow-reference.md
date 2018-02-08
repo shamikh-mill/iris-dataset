@@ -73,3 +73,12 @@ Parameter training_epochs defines how many times we run over the data in our tra
 ## Resources
 1. https://www.lynda.com/Google-TensorFlow-tutorials/Building-Deploying-Applications-TensorFlow/601800-2.html (Defining the Model Strucure, 
 in part 3, is perhaps the most useful 
+
+
+Hosting TF Models on the Cloud
+```
+gcloud ml-engine models versions create version_name \
+    --model model_name
+    --origin gs://my/trained/model/path
+    --runtime-version 1.4
+```
