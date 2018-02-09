@@ -83,7 +83,9 @@ gcloud ml-engine models versions create version_name \
     --runtime-version 1.4
 ```
 
-1. gsutil mb -l us-central1 gs://game-sales-1
-2. gsutil cp -R exported_model/* gs://game-sales-1/earnings_v1/
-3. gcloud ml-engine models create earnings --regions us-central1
-4. gcloud ml-engine versions create v1 --model=earnings --origin=gs://game-sales-1/earnings_v1/ --runtime-version=1.4
+1. gsutil mb -l us-central1 gs://project-name
+2. gsutil cp -R exported_model/* gs://project-name/modelname_v1/
+3. gcloud ml-engine models create modelname --regions us-central1 
+- Creates the model named earnings (placeholder)
+4. gcloud ml-engine versions create v1 --model=modelname --origin=gs://project-name/earnings_v1/ --runtime-version=1.4
+- Create first version of the model, specify its files
